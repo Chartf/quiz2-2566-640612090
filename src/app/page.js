@@ -1,6 +1,13 @@
 "use client";
+import { PostOwner } from "@/components/PostOwner";
+import { Comment } from "@/components/Comment";
+import { Reply } from "@/components/Reply";
+import { useState, useEffect } from "react";
+
 
 export default function HomePage() {
+  useEffect (()=>{})
+
   return (
     <div
       style={{ minHeight: "100vh", backgroundColor: "ghostwhite" }}
@@ -15,16 +22,16 @@ export default function HomePage() {
         <div className="vstack gap-3">
           <div className="d-flex align-items-center gap-3">
             <img
-              src="/profileImages/handsome.jpg"
+              src="/profileImages/1.jpg"
               width="48"
               height="48"
               className="rounded-circle"
               style={{ objectFit: "cover" }}
             />
-            <span className="fw-semibold fs-5">Chayanin Suatap 650610560</span>
+            <PostOwner Name = "Thanarat monkumdee " Number = "640612090"></PostOwner>
           </div>
 
-          <span>Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207</span>
+          <PostOwner post = "Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207"></PostOwner>
 
           <div className="d-flex align-items-center gap-1">
             <img src="/like.svg" width={20}></img>
@@ -73,11 +80,57 @@ export default function HomePage() {
             <br />
             <span>จริงค้าบบบบบบบบ</span>
             <div className="d-flex align-items-center gap-1">
+              <span className="text-muted"></span>
+            </div>
+          </div>
+        </div>
+
+        <div className="d-flex gap-2 my-2 ps-5">
+          <img
+            src="/profileImages/popcat.png"
+            width="48"
+            height="48"
+            className="rounded-circle"
+            style={{ objectFit: "cover" }}
+          />
+          <div
+            className="rounded rounded-3 p-2"
+            style={{ backgroundColor: "#E5E7EB" }}
+          >
+            <span className="fw-semibold">popcat</span>
+            <br />
+            <span>ลิซ่าาาาาา</span>
+            <div className="d-flex align-items-center gap-1">
               <img src="/like.svg" width={20}></img>
               <span className="text-muted">2 คน</span>
             </div>
           </div>
         </div>
+
+        <div className="d-flex gap-2 my-2">
+          <img
+            src="/profileImages/charliebrown.jpg"
+            width="48"
+            height="48"
+            className="rounded-circle"
+            style={{ objectFit: "cover" }}
+          />
+          <div
+            className="rounded rounded-3 p-2"
+            style={{ backgroundColor: "#E5E7EB" }}
+          >
+            <span className="fw-semibold">charliebrown</span>
+            <br />
+            <span>บ้าไปแล้ว</span>
+            <div className="d-flex align-items-center gap-1">
+
+              <span className="text-muted"></span>
+            </div>
+          </div>
+        </div>
+
+
+        
 
         {/* map-loop render Comment component here */}
       </div>

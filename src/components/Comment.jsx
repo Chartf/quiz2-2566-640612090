@@ -5,10 +5,17 @@ export const Comment = ({
   likeNum,
   replies,
 }) => {
+  const Image = () =>{
+    
+  }
+
+  const like = () =>{
+
+  }
+
   return (
     <div>
-      your code here...
-      {/* map-loop render Reply component here */}
+      
     </div>
   );
 };
